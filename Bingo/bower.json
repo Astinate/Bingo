@@ -1,0 +1,21 @@
+{
+  "name": "Bingo",
+  "description": "Bingo",
+  "license": "MIT",
+  "homepage": "https://github.com/Astinate/Bingo",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "authors": [
+    "Astinate <astinate@gmail.com>"
+  ],
+  "main": "",
+  "dependencies": {
+    "bootstrap": "^3.3.6"
+  }
+}

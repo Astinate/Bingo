@@ -21,7 +21,12 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(require('stylus').middleware(path.join(__dirname, 'public')));
+
+// Handle static resourses
+// 'public' folder used for custom browser dependencies (js / css / images)
 app.use(express.static(path.join(__dirname, 'public')));
+// 'bower_components' folder used for non-custom browser dependencies (bootstrap and etc.);
+app.use(express.static(path.join(__dirname, 'bower_components')));
 
 app.use('/', routes);
 app.use('/users', users);
